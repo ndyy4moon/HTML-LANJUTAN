@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profil Mahasiswa</title>
+</head>
+
+<body>
+
+    <header>
+        <h1>Profil Mahasiswa</h1>
+        <p>Teknik Informatika</p>
+    </header>
+
+    <nav>
+        <a href="#profil">Profil</a> |
+        <a href="#data">Data Mahasiswa</a> |
+        <a href="#kontak">Form Kontak</a>
+    </nav>
+
+    <main>
+
+        <section id="profil">
+            <h2>Profil Mahasiswa</h2>
+            <p>
+                Selamat datang di halaman profil mahasiswa
+                Teknik Informatika.
+            </p>
+        </section>
+
+        <section id="data">
+    <h2>Data Mahasiswa</h2>
+
+    <table border="1">
+        <tr>
+            <th>No</th>
+            <th>Nama</th>
+            <th>NIM</th>
+            <th>Program Studi</th>
+        </tr>
+
+        <tr>
+            <td>1</td>
+            <td>Nadya Nisaqilah Putri Budiman</td>
+            <td>312510191</td>
+            <td>Teknik Informatika</td>
+        </tr>
+    </table>
+</section>
+
+<section id="kontak">
+    <h2>Form Kontak</h2>
+
+    <form>
+
+        <label for="nama">Nama:</label><br>
+        <input type="text" id="nama" name="nama" required>
+
+        <br><br>
+
+        <label for="email">Email:</label><br>
+        <input type="email" id="email" name="email" required>
+
+        <br><br>
+
+        <label for="umur">Umur:</label><br>
+        <input type="number" id="umur" name="umur" min="17" max="100">
+
+        <br><br>
+
+        <label for="tanggal">Tanggal Lahir:</label><br>
+        <input type="date" id="tanggal" name="tanggal">
+
+        <br><br>
+
+        <label>Jenis Kelamin:</label><br>
+
+        <input type="radio" id="laki" name="jenis_kelamin" value="Laki-laki">
+        <label for="laki">Laki-laki</label>
+
+        <input type="radio" id="perempuan" name="jenis_kelamin" value="Perempuan">
+        <label for="perempuan">Perempuan</label>
+
+        <br><br>
+
+        <label>Hobi:</label><br>
+
+        <input type="checkbox" id="membaca" name="hobi" value="Membaca">
+        <label for="membaca">Membaca</label>
+
+        <input type="checkbox" id="musik" name="hobi" value="Musik">
+        <label for="musik">Musik</label>
+
+        <input type="checkbox" id="olahraga" name="hobi" value="Olahraga">
+        <label for="olahraga">Olahraga</label>
+
+        <br><br>
+
+        <label for="prodi">Program Studi:</label><br>
+
+        <select id="prodi" name="prodi" required>
+            <option value="">-- Pilih Program Studi --</option>
+            <option value="teknik-informatika">Teknik Informatika</option>
+        </select>
+
+        <br><br>
+
+        <label for="pesan">Pesan:</label><br>
+
+        <textarea
+            id="pesan"
+            name="pesan"
+            rows="5"
+            cols="40"
+            placeholder="Tulis pesan Anda..."
+        ></textarea>
+
+        <br><br>
+
+        <button type="submit">Kirim</button>
+        <button type="reset">Reset</button>
+
+    </form>
+</section>
+
+            <section id="multimedia">
+            <h2>Multimedia</h2>
+
+            <h3>Audio</h3>
+            <audio controls>
+                <source src="audio.mp3" type="audio/mpeg">
+                Browser Anda tidak mendukung audio.
+            </audio>
+
+            <h3>Video</h3>
+            <video controls width="400">
+                <source src="video.mp4" type="video/mp4">
+                Browser Anda tidak mendukung video.
+            </video>
+        </section>
+        </main>
+
+    <footer>
+        <p>&copy; 2026 Nadya Nisaqilah Putri Budiman</p>
+    </footer>
+
+</body>
+</html>
